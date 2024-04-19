@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: mktrs-hello-jps-reactive
+
+#If you want to override the JSON PlaceHolder URL use the following property.
+#json-placeholder-service:
+#base-url: http://localhost:3000

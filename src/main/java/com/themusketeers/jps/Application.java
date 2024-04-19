@@ -19,6 +19,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Application {
 
+    /**
+     * Running application definition entry point.
+     *
+     * @param args Includes the command line parameters for the application.
+     */
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
