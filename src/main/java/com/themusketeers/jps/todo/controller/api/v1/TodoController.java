@@ -25,7 +25,8 @@ import reactor.core.publisher.Mono;
 @RestController
 @RequestMapping("/api/v1/todos")
 public class TodoController {
-
+    public static final String USER_CONTROLLER_BASE_PATH = "/api/v1/users";
+    
     private final JPSTodoClient jpsTodoClient;
 
     /**
