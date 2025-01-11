@@ -16,7 +16,7 @@
     <properties>
         <java.version>21</java.version>
         <jacoco-maven-plugin.version>0.8.12</jacoco-maven-plugin.version>
-        <mktrs-jps-reactive-spring-boot-starter.version>2024.1.0</mktrs-jps-reactive-spring-boot-starter.version>
+        <mktrs-jps-reactive-spring-boot-starter.version>2025.1.0</mktrs-jps-reactive-spring-boot-starter.version>
 
         <!-- Docker image settings -->
         <docker.registry>docker.io</docker.registry>
