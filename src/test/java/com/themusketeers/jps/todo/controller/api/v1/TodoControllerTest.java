@@ -12,11 +12,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 import com.themusketeers.jps.common.config.JsonPlaceholderServiceAutoConfiguration;
-import com.themusketeers.jps.common.config.WebClientConfig;
 import com.themusketeers.jps.todo.model.Todo;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.web.reactive.function.client.WebClientAutoConfiguration;
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpHeaders;
@@ -24,7 +24,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
 @WebFluxTest(TodoController.class)
-@Import({WebClientConfig.class, JsonPlaceholderServiceAutoConfiguration.class})
+@Import({WebClientAutoConfiguration.class, JsonPlaceholderServiceAutoConfiguration.class})
 class TodoControllerTest {
     private static final String TODO_CONTROLLER_BASE_PATH = "/api/v1/todos";
     private static final String TODO_CONTROLLER_BASE_PATH_ID = "/api/v1/todos/{id}";
