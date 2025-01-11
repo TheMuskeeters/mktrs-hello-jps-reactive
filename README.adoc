@@ -4,7 +4,7 @@
 
 = mktrs-hello-jps-reactive
 
-V2024.1.0
+V2025.1.0
 
 The purpose of this demo application is to showcase different ways to build the deployment artifact with the most recent
 *Spring Boot* development tooling to improve memory/load metrics.
