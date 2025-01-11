@@ -50,14 +50,13 @@ public class TodoController {
     }
 
     /**
-     * Find a {@link Todo} record using an 'id'. If record is not found an HTTP 400 is returned (see
+     * Find a {@link Todo} record using an 'id'. If record is not found an HTTP 400 is returned.
      *
      * @param id Indicates the identifier we want to locate.
      * @return The requested information.
      */
     @GetMapping("{id}")
     public Mono<Todo> retrieveById(@PathVariable Integer id) {
-        System.out.println("OUT");
         return jpsTodoClient.findById(id);
     }
 }
