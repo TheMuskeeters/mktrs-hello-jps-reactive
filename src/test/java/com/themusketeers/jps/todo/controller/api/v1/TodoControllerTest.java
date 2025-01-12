@@ -28,9 +28,11 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 class TodoControllerTest {
     private static final String TODO_CONTROLLER_BASE_PATH = "/api/v1/todos";
     private static final String TODO_CONTROLLER_BASE_PATH_ID = "/api/v1/todos/{id}";
+    private static final String TODO_TITLE = "ipsam aperiam voluptates qui";
 
     private static final int TODO_LIST_EXPECTED_SIZE = 200;
     private static final int TODO_ID = 200;
+    private static final int TODO_USER_ID = 10;
 
     @Autowired
     private WebTestClient client;
@@ -77,6 +79,6 @@ class TodoControllerTest {
     }
 
     private Todo buildTodo() {
-        return new Todo(10, 200, "ipsam aperiam voluptates qui", false);
+        return new Todo(TODO_USER_ID, TODO_ID, TODO_TITLE, false);
     }
 }
